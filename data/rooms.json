@@ -1,0 +1,103 @@
+{
+  "Rooms": [
+    {
+      "RoomId": "001",
+      "Location": "Bellinzona",
+      "Children": [
+        {
+          "ProductIdentifier": {
+            "TypeNumber": 6115,
+            "Taxgroup": 21010
+          },
+          "TypeDescription": "Aufpreis Einschreiben",
+          "Price": 500,
+          "SendLimitText": "",
+          "InfoText": "Einschreiblich.",
+          "Mandatory": false,
+          "PriceIncludedInMainProduct": false
+        },
+        {
+          "ProductIdentifier": {
+            "TypeNumber": 6116,
+            "Taxgroup": 21010
+          },
+          "TypeDescription": "A-Post Plus",
+          "Price": 350,
+          "SendLimitText": "",
+          "InfoText": "Mit Eingabe der Sendungsnummer ",
+          "Mandatory": false,
+          "PriceIncludedInMainProduct": false
+        }
+      ],
+      "PriceIncludedInMainProduct": false
+    },
+    {
+      "ProductIdentifier": {
+        "TypeNumber": 6664,
+        "Taxgroup": 10010
+      },
+      "TypeDescription": "Swiss-Express Mond",
+      "Children": [
+        {
+          "ProductIdentifier": {
+            "TypeNumber": 1765,
+            "Taxgroup": 111
+          },
+          "TypeDescription": "Zuschlag pro clima",
+          "Price": 10,
+          "SendLimitText": "",
+          "InfoText": "Sch\u00fctzen Sie die Umwelt mit uns und versenden Sie Briefe und Pakete klimaneutral. <br \/><br \/>Weitere Informationen: <a href=\"http:\/\/www.post.ch\/post-startseite\/post-dossier-nachhaltigkeit\/post-dossier-nachhaltigkeit-oekologische-verantwortung\/post-pro-clima.htm?DCSext.wt_shortcut=clima&WT.mc_id=shortcut_clima\" target=\"_blank\" class=\"link\"> www.post.ch\/klima <\/a>  \n",
+          "Mandatory": false,
+          "PriceIncludedInMainProduct": false
+        },
+        {
+          "ProductIdentifier": {
+            "TypeNumber": 6307,
+            "Taxgroup": 66410
+          },
+          "TypeDescription": "Signature",
+          "Price": 200,
+          "SendLimitText": "",
+          "InfoText": "Ihr Paket wird dem Empf\u00e4nger gegen Unterschrift ausgeh\u00e4ndigt.<br \/>Die Post haftet, f\u00fcr Schaden, der aus Besch\u00e4digung, Verlust oder nicht geh\u00f6riger Zustellung entsteht, bis max. CHF 1''500.-.",
+          "Mandatory": false,
+          "PriceIncludedInMainProduct": false
+        },
+        {
+          "ProductIdentifier": {
+            "TypeNumber": 6421,
+            "Taxgroup": 66410
+          },
+          "TypeDescription": "Manuelle Verarbeitung",
+          "Price": 400,
+          "SendLimitText": "",
+          "InfoText": "Gewisse Pakete entsprechen zwar den Massen f\u00fcr ein Standardpaket, sie weisen aber eine bestimmte Eigenschaften auf, die sie f\u00fcr die automatische Sortierung ausschliesst:<br \/>- aussergew\u00f6hnliche Masse<br \/>- ungeeignetes Verpackungsmaterial<br \/>- spezielle Paketformen<br \/><br \/>Solche Sendungen m\u00fcssen von Hand verarbeitet werden und sind deshalb zuschlagspflichtig.<br \/><br \/>Der Zuschlag f\u00fcr manuelle Verarbeitung wird f\u00fcr folgende Sendungen erhoben \n<br \/>- Rollen inkl. Dosen, Pyramiden, Dreiecksverpackungen bis 100 cm L\u00e4nge\n<br \/>- Flaschen (ohne Glas)\n<br \/>- Alle Kanister\n<br \/>- Sendungen in einer Verpackung aus Holz, Metall,\nLeder oder Styropor",
+          "Mandatory": false,
+          "PriceIncludedInMainProduct": false
+        }
+      ],
+      "RunningTimeText": "1 Werktag",
+      "MinRunningTime": 1,
+      "MaxRunningTime": 1,
+      "Price": 1600,
+      "SendLimitText": "Aufgabe bis 18.30 Uhr oder bis zum fr\u00fcheren ordentlichen Schalterschluss.\n<br \/>\n<br \/>Bei Poststellen mit verl\u00e4ngerten Abend\u00f6ffnungszeiten bis zum angegebenen Annahmeschluss f\u00fcr Swiss-Express \u00abMond\u00bb.\n<br \/>",
+      "InfoText": "Die Post garantiert die Zustellung von Swiss-Express \u00abMond\u00bb am Folgetag bis sp\u00e4testens 09:00 Uhr. <br \/>In der ganzen Schweiz und im F\u00fcrstentum Liechtenstein. Sogar am Samstag!<br \/>Die Post haftet, f\u00fcr Schaden, der aus Besch\u00e4digung, Verlust oder nicht geh\u00f6riger Zustellung entsteht, bis max. CHF 500.-",
+      "Mandatory": false,
+      "PriceIncludedInMainProduct": false
+    },
+    {
+      "ProductIdentifier": {
+        "TypeNumber": 6031,
+        "Taxgroup": 10010
+      },
+      "TypeDescription": "B-Post Standardbrief",
+      "RunningTimeText": "2 - 3 Werktage",
+      "MinRunningTime": 2,
+      "MaxRunningTime": 3,
+      "Price": 85,
+      "SendLimitText": "Poststelle: Aufgabe bis 18.30 Uhr oder bis zum ordentlichen Schalterschluss\n<br \/>Briefeinwurf: Bis zur letzten Leerung",
+      "InfoText": "Zustellung: an jedem Werktag (Mo - Fr). Aufgabe\/Annahme von Briefen: in jedem der zahlreichen gelben Briefeinw\u00fcrfe oder bei der Poststelle in Ihrer N\u00e4he. Bitte beachten Sie die Leerungszeiten und lokalen Schalterschlusszeiten.\n<br \/>\n<br \/>Sendungen \u00fcber 20 mm Dicke und\/oder 1'000 g gelten als Pakete.",
+      "Mandatory": false,
+      "PriceIncludedInMainProduct": false
+    }
+  ]
+}

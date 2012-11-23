@@ -1,0 +1,38 @@
+ [{"name" : "Cereali", 
+  "order" : "2", 
+  "items" : [ 
+  		{"name" : "Avena Bianca" , 
+  		 "price" : "2.20",
+  		 "priceunit" : "kg",
+  		 "orderstep" : "100",
+  		 "orderunit" : "gr"} , 
+  		{"name" : "Riso",
+  		 "price" : "5.10",
+  		 "priceunit" : "1kg",
+  		 "orderstep" : "100",
+  		 "orderunit" : "gr"},
+  	    {"name" : "Riso selvatico",
+  	     "price" : "6.20",
+  	     "priceunit" : "kg",
+  	     "orderstep" : "1",
+  	     "orderunit" : "pcs"}
+  	   ]
+ },
+ {"name" : "Carni",
+  "order" : "3",
+  "items" : [
+   		{"name" : "Manzo",
+   		 "price" : "6.20",
+   		 "priceunit" : "1kg"},
+   		{"name" : "Agnello",
+   		 "price" : "46.20",
+   		 "priceunit" : "kg",
+   		 "orderstep" : "100",
+   		 "orderunit" : "gr"},
+   		{"name" : "Tacchino",
+   		 "price" : "26.20",
+   		 "priceunit" : "1kg",
+   		 "orderstep" : "100",
+   		 "orderunit" : "gr"}
+   	]
+ }]
