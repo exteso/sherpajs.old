@@ -15,7 +15,11 @@ newOrderApp.controller('ListCtrl', function ListCtrl($scope, Categories) {
 	$scope.ordering = function(category){
 		return category.order;
 	};
-	
+
+    $scope.toggleEditMode = function(category){
+        return category.order;
+    };
+
 	$scope.calculateTotals = function(category){
 		$scope.totals = {};
 		var catTotal = 0;
@@ -23,7 +27,7 @@ newOrderApp.controller('ListCtrl', function ListCtrl($scope, Categories) {
 			var qty = $scope.order[item.name].qty;
 			var price = item.price;
 			var totalItem = qty*price;
-			$scope.totals[item.name] = {'total' : catTotal};
+			$scope.totals[item.name] = {'total' : totalItem};
 			catTotal = catTotal + totalItem;	
 		});
 		$scope.totals[category.name] = {'total' : catTotal};
@@ -34,6 +38,7 @@ newOrderApp.controller('ListCtrl', function ListCtrl($scope, Categories) {
 
 newOrderApp.filter('formatPrice', function() {
 	return function(input) {
+        if (input == null) return "";
 		return (input/100*100).toFixed(2);
 	};
 });

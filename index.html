@@ -86,7 +86,7 @@
                                     <input class="input-mini" id="appendedInput" ng-change="calculateTotals(category)" type="number" placeholder="0" ng-model="order[item.name].qty" value="{{order[item.name].qty}}"/>
                                     <span class="add-on">{{item.orderunit}}</span>
                                 </div>
-                                <div class="span5">{{item.name}}</div>
+                                <div class="span5" ng-click="toggleEditMode()">{{item.name}}</div>
                                 <div class="span4 pull-right">{{item.price}} CHF/{{item.priceunit}}</div>
                             </div>
                             <div class="row-fluid" ng-show="item.editMode">
