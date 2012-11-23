@@ -1,6 +1,12 @@
-var newOrderApp = angular.module('new-order-app', ['mongolab'])
+"use strict";
 
-newOrderApp.controller('ListCtrl', function ListCtrl($scope, Categories, Orders) {
+
+//-----------------------------------------------------------------------------
+// controllers
+//-----------------------------------------------------------------------------
+
+
+var NewOrderCtrl = function NewOrderCtrl($scope, Categories, Orders, SherpaService) {
     $scope.categories = Categories.query(function(){
 		$scope.order = {};
 		angular.forEach($scope.categories, function(category){
@@ -10,6 +16,9 @@ newOrderApp.controller('ListCtrl', function ListCtrl($scope, Categories, Orders)
 			});
 		});
 	});
+
+    //query on mongodb does not work!!
+    $scope.catalogCategories = SherpaService.getCatalog();
     
     //$scope.result=Categories.query();
 	$scope.totals = {};
@@ -53,7 +62,7 @@ newOrderApp.controller('ListCtrl', function ListCtrl($scope, Categories, Orders)
 		});
 	}
 	
-});
+};
 /*
 newOrderApp.controller('CreateCtrl', function CreateCtrl($scope, $location, Orders) {
 	$scope.save = function() {
@@ -63,9 +72,3 @@ newOrderApp.controller('CreateCtrl', function CreateCtrl($scope, $location, Orde
 	}
 });
  */
-newOrderApp.filter('formatPrice', function() {
-	return function(input) {
-		if (input == null) return "";
-		return (input/100*100).toFixed(2);
-	};
-});
